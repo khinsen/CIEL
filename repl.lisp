@@ -1,8 +1,5 @@
 ;; #!/usr/bin/sbcl --script
-(load "~/quicklisp/setup")
 
-(let ((*standard-output* (make-broadcast-stream)))
-  (ql:quickload "cl-readline"))
 (uiop:define-package :sbcli
   (:use :common-lisp :trivial-package-local-nicknames)
   (:import-from :magic-ed
