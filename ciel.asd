@@ -179,7 +179,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (asdf:defsystem "ciel/repl"
   :description "readline REPL for CIEL with quality of life improvements."
-  :depends-on (;; :ciel  ;; let's avoid, it could run side effects twice (like a defparameter set then reset).
+  :depends-on (:ciel
                ;; deps
                :cl-readline
                :lisp-critic  ;; it would be nice to integrate it with Slime.
